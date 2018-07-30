@@ -125,6 +125,7 @@ def render_button(
     attrs["class"] = classes
     if href:
         attrs["href"] = href
+        attrs["role"] = "button"
         tag = "a"
     else:
         tag = "button"
